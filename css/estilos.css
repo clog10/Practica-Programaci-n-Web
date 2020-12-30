@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-1 {
+    display: inline;
+    width: 100%;
+}
+
+
+.nombre {
+    background-color: #424242;
+    color: #fafafa;
+    height: 80px;
+}
+
+.nombre>h1 {
+    padding-top: 15px;
+    font-family: 'Langar', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    top: 50%;
+    position: absolute;
+    margin-top: -40px;
+
+    text-shadow: -1px -1px 0px rgb(84, 84, 226),
+        3px 3px 0px rgb(84, 84, 241),
+        6px 6px 0px rgb(160, 160, 228);
+}
+
+.encabezado {
+    background-color: #212121;
+    color: #eceff1;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.menus {
+    /*margin-left: 480px;*/
+    margin-top: 10px;
+}
+
+.menus .menu-text {
+    padding-left: 30px;
+    color: #b3e5fc;
+    font-family: 'Audiowide', cursive;
+}
+
+.contenedor-2{
+    display: inline;
+}
+
+.contenedor-2 .vender>h2{
+    padding-top: 15px;
+    padding-left: 50px;
+    font-size: 50px;
+    width: 100%;
+}
+
+.contenedor-2 .vender>p{
+    padding-left: 50px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.contenedor-2 .vender .form-outline>input{
+    margin-left: 50px;
+    width: 80%;
+}
+
+.boton_aceptar{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    color: #000000;
+    background-color: #00972d;
+    border-radius: 6px;
+    border: 2px solid #003f18;
+    font-weight: bolder;
+  }
+
+  .boton_aceptar:hover{
+    color: #003f18;
+    background-color: #ffffff;
+  }
+
+  .botones{
+      padding-top: 20px;
+      padding-left: 0;
+  }
+
+  .boton_cancelar{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #9b0000;
+    border-radius: 6px;
+    border: 2px solid #360000;
+    font-weight: bolder;
+  }
+
+  .boton_cancelar:hover{
+    color: #460000;
+    background-color: #ffffff;
+  }
+
+  .boton_ver{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #c7c401;
+    border-radius: 6px;
+    border: 2px solid #414d00;
+    font-weight: bolder;
+  }
+
+  .boton_ver:hover{
+    color: #404700;
+    background-color: #ffffff;
+  }
+
+  .tablita{
+      padding-top: 20px;
+      padding-left: 50px;
+      width: 90%;
+  }

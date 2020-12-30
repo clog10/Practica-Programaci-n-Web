@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script src="https://kit.fontawesome.com/ac3d7290c1.js" crossorigin="anonymous"></script>
+    <title>Agregar Producto</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="contenedor-1">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 nombre">
+                <h1> </h1>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 nombre">
+                <h1><i class="fab fa-accusoft"></i> Mi tiendita</h1>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 nombre">
+                <h1> </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2 encabezado">
+
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 encabezado">
+                <div class="menus">
+                    <a href="vender.html">
+                        <span class="menu-text">Vender</span>
+                    </a>
+                    <a href="productos.html">
+                        <span class="menu-text">Productos</span>
+                    </a>
+                    <a href="#">
+                        <span class="menu-text">Ventas</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 encabezado"></div>
+        </div>
+    </div>
+    <div class="contenedor-2">
+        <div class="row">
+            <div class="col-xs-10 col-sm-10 col-md-10 vender">
+                <h2>Agregar Producto</h2>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 vender">
+                <h2> </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 vender">
+                <p>Nombre del Producto</p>
+                <div class="form-outline">
+                    <input type="text" id="nombre" class="form-control" placeholder="Escribe el nombre del producto" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 vender">
+                <p>Código de Barras</p>
+                <div class="form-outline">
+                    <input type="text" id="codigo" class="form-control" placeholder="Escribe el código del producto" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 vender">
+                <p>Existencia actual</p>
+                <div class="form-outline">
+                    <input type="text" id="existencia" class="form-control"
+                        placeholder="Cantidad actual del producto" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 vender">
+                <p>Precio</p>
+                <div class="form-outline">
+                    <input type="text" id="precio" class="form-control" placeholder="Precio del producto" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-1 col-sm-1 col-md-1 vender">
+            </div>
+            <div class="col-xs-1.5 col-sm-1.5 col-md-1.5 vender">
+                <div class="botones">
+                    <a class="boton_aceptar" href="#" onclick="agrega();">Guardar <i class="far fa-check-circle"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 vender">
+                <div class="botones">
+                    <a class="boton_ver" href="productos.html" onclick="llenaTabla();">Ver todos <i class="fas fa-stream"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-5.5 col-sm-5.5 col-md-5.5 vender"></div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
