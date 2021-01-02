@@ -26,20 +26,20 @@
 
     <div class="contenedor-1">
         <div class="row">
-            <div class="col-xs-2 col-sm-2 col-md-2 nombre">
+            <div class="col-xs-1 col-sm-2 col-md-2 nombre">
                 <h1> </h1>
             </div>
-            <div class="col-xs-8 col-sm-8 col-md-8 nombre">
+            <div class="col-xs-10 col-sm-8 col-md-8 nombre">
                 <h1><i class="fab fa-accusoft"></i> Mi tiendita</h1>
             </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 nombre">
+            <div class="col-xs-1 col-sm-2 col-md-2 nombre">
                 <h1> </h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-2 col-sm-2 col-md-2 encabezado">
+            <div class="col-xs-1 col-sm-2 col-md-2 encabezado">
             </div>
-            <div class="col-xs-8 col-sm-8 col-md-8 encabezado">
+            <div class="col-xs-10 col-sm-8 col-md-8 encabezado">
                 <div class="menus">
                     <a href="vender.html">
                         <span class="menu-text">Vender</span>
@@ -52,10 +52,9 @@
                     </a>
                 </div>
             </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 encabezado"></div>
+            <div class="col-xs-1 col-sm-2 col-md-2 encabezado"></div>
         </div>
         <div class="row">
-
         </div>
     </div>
 
@@ -69,43 +68,40 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-3 col-sm-3 col-md-3 vender">
+            <div class="col-xs-4 col-sm-4 col-md-4 vender">
                 <p>Código de barras</p>
             </div>
-            <div class="col-xs-9 col-sm-9 col-md-9 vender">
+            <div class="col-xs-8 col-sm-8 col-md-8 vender">
                 <h2> </h2>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 vender">
                 <div class="form-outline">
-                    <input type="text" id="typeText" class="form-control" placeholder="Escanea el código o escribelo y presiona Enter"/>
+                    <input type="text" id="codigo_barras" class="form-control" placeholder="Escanea el código o escribelo y presiona Enter"/>
                   </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-1 col-sm-1 col-md-1 vender">
+            <div class="col-xs-3 col-sm-1 col-md-1 vender">
             </div>
-            <div class="col-xs-1.5 col-sm-1.5 col-md-1.5 vender">
+            <div class="col-xs-8 col-sm-8 col-md-8 vender">
                 <div class="botones">
                     <a class="boton_aceptar" href="#">Terminar <i class="far fa-check-circle"></i></a>
-                </div>
-            </div>
-            <div class="col-xs-3 col-sm-3 col-md-3 vender">
-                <div class="botones">
                     <a class="boton_cancelar" href="#">Cancelar venta <i class="fas fa-trash"></i></a>
                 </div>
             </div>
-            <div class="col-xs-5.5 col-sm-5.5 col-md-5.5 vender"></div>
+            <div class="col-xs-1 col-sm-3 col-md-3 vender">
+            </div>
         </div>
         <div class="row">
             <div class="vender">
-                <h2>Total: </h2>
+                <h2>Total: $ 120.00</h2>
             </div>
         </div>
         <div class="row">
             <div class="tablita table-responsive-sm table-responsive-md">
-                <table class="table table-hover ">
+                <table class="table table-hover" id="tabla">
                     <thead class="table-dark">
                       <tr>
                         <th scope="col">#</th>
@@ -114,36 +110,36 @@
                         <th scope="col">Precio</th>
                         <th scope="col">Cantidad</th>
                         <th scope="col">Total</th>
-                        <th scope="col">Quitar</th>
+                        <th scope="col">Quitar de la lista</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>1</td>
+                        <td>Libreta Scribe raya</td>
+                        <td>1524103578951</td>
+                        <td>15.00</td>
+                        <td>3</td>
+                        <td>45.00</td>
+                        <td><button class="quitar" onclick="borraElemento(this);"><i class="fas fa-trash-alt"></i></button></td>
                       </tr>
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>2</td>
+                        <td>Libreta Scribe cuadro</td>
+                        <td>1524103578952</td>
+                        <td>15.00</td>
+                        <td>3</td>
+                        <td>45.00</td>
+                        <td><button class="quitar" onclick="borraElemento(this);"><i class="fas fa-trash-alt"></i></button></td>
                       </tr>
                       <tr>
-                        <th scope="row">3</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>3</td>
+                        <td>Portaminas Zebra</td>
+                        <td>3524103578935</td>
+                        <td>10.00</td>
+                        <td>3</td>
+                        <td>30.00</td>
+                        <td><button class="quitar" onclick="borraElemento(this);"><i class="fas fa-trash-alt"></i></button></td>
                       </tr>
                     </tbody>
                   </table>
