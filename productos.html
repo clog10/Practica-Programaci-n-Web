@@ -3,7 +3,7 @@
 
 <head>
     <script src="https://kit.fontawesome.com/ac3d7290c1.js" crossorigin="anonymous"></script>
-    <title>Agregar Producto</title>
+    <title>Productos</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -77,35 +77,86 @@
         </div>
         <div class="row">
             <div class="tablita table-responsive-sm table-responsive-md">
-                <table class="table table-hover ">
+                <table class="table table-hover" id="tabla">
                     <thead class="table-dark">
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Código</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Existencia</th>
-                        <th scope="col">Editar</th>
-                        <th scope="col">Eliminar</th>
-                      </tr>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Código</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Existencia</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Eliminar</th>
+                        </tr>
                     </thead>
                     <tbody id="productos">
-                      <tr>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                          <td></td>
-                      </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Libreta Scribe raya</td>
+                            <td>1524103578951</td>
+                            <td>15.00</td>
+                            <td>15</td>
+                            <td><button class="editar">
+                                    <p> Editar <i class="fas fa-edit"></i></p>
+                                </button></td>
+                            <td><button class="quitar" onclick="borraElemento(this);">
+                                    <p>Eliminar <i class="fas fa-trash-alt"></i></p>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Libreta Scribe cuadro</td>
+                            <td>1524103578952</td>
+                            <td>15.00</td>
+                            <td>22</td>
+                            <td><button class="editar">
+                                <p> Editar <i class="fas fa-edit"></i></p>
+                            </button></td>
+                        <td><button class="quitar" onclick="borraElemento(this);">
+                                <p>Eliminar <i class="fas fa-trash-alt"></i></p>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Portaminas Zebra</td>
+                            <td>3524103578935</td>
+                            <td>10.00</td>
+                            <td>30</td>
+                            <td><button class="editar">
+                                <p> Editar <i class="fas fa-edit"></i></p>
+                            </button></td>
+                        <td><button class="quitar" onclick="borraElemento(this);">
+                                <p>Eliminar <i class="fas fa-trash-alt"></i></p>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Lapiz Ticonderoga</td>
+                            <td>3524103578955</td>
+                            <td>5.00</td>
+                            <td>150</td>
+                            <td><button class="editar">
+                                <p> Editar <i class="fas fa-edit"></i></p>
+                            </button></td>
+                        <td><button class="quitar" onclick="borraElemento(this);">
+                                <p>Eliminar <i class="fas fa-trash-alt"></i></p>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Resistol Barrilito 100 ml</td>
+                            <td>8524103578922</td>
+                            <td>12.00</td>
+                            <td>25</td>
+                            <td><button class="editar">
+                                <p> Editar <i class="fas fa-edit"></i></p>
+                            </button></td>
+                        <td><button class="quitar" onclick="borraElemento(this);">
+                                <p>Eliminar <i class="fas fa-trash-alt"></i></p>
+                            </button></td>
+                        </tr>
                     </tbody>
-                  </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="tabla">
-
+                </table>
             </div>
         </div>
     </div>
