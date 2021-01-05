@@ -1,3 +1,4 @@
+//@utor Carlos Loaeza
 
 function Producto(nombre, codigo, existencia, precio) {
     this.nombre = nombre;
@@ -34,7 +35,11 @@ function agrega() {
     var existencia = document.getElementById("existencia").value;
     var precio = document.getElementById("precio").value;
 
-    test(nombre, codigo, existencia, precio);
+    if (nombre.length == 0 || codigo.length == 0 || existencia.length == 0 || precio.length == 0) {
+        alert("Algùn campo está vacío, Verifique");
+    } else {
+        test(nombre, codigo, existencia, precio);
+    }
 
     document.getElementById("nombre").value = "";
     document.getElementById("codigo").value = "";
