@@ -68,6 +68,7 @@
     padding-left: 50px;
     font-size: 20px;
     width: 100%;
+    color: #000000;
 }
 
 .contenedor-2 .vender .form-outline>input {
@@ -149,7 +150,7 @@ td {
     height: 40px;
 }
 
-.quitar>p {
+.quitar>i,p {
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
