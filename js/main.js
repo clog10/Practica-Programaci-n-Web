@@ -23,8 +23,8 @@ function test(nombre, codigo, existencia, precio) {
         alert("Código de barras invalido o existencia incorrecta o precio incorrecto ");
     } else {
         var p = new Producto(nombre, codigo, existencia, precio);
-        alert("Datos del producto correctos\nNombre:"+nombre+
-                "\nCódigo: "+codigo+"\nExistencia: "+existencia+"\nPrecio: "+precio);
+        alert("Datos del producto correctos\nNombre:" + nombre +
+            "\nCódigo: " + codigo + "\nExistencia: " + existencia + "\nPrecio: " + precio);
     }
 }
 

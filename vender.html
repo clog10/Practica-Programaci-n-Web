@@ -4,6 +4,7 @@
 <head>
     <script src="https://kit.fontawesome.com/ac3d7290c1.js" crossorigin="anonymous"></script>
     <title>Vender</title>
+    <link rel="shortcut icon" type="image/png" href="img/burj-al-arab.png" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -78,8 +79,9 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 vender">
                 <div class="form-outline">
-                    <input type="text" id="codigo_barras" class="form-control" placeholder="Escanea el código o escribelo y presiona Enter"/>
-                  </div>
+                    <input type="text" id="codigo_barras" class="form-control"
+                        placeholder="Escanea el código o escribelo y presiona Enter" />
+                </div>
             </div>
         </div>
         <div class="row">
@@ -103,46 +105,49 @@
             <div class="tablita table-responsive-sm table-responsive-md">
                 <table class="table table-hover" id="tabla">
                     <thead class="table-dark">
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Código</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Total</th>
-                        <th scope="col">Quitar de la lista</th>
-                      </tr>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Código</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Quitar de la lista</th>
+                        </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>Libreta Scribe raya</td>
-                        <td>1524103578951</td>
-                        <td>15.00</td>
-                        <td>3</td>
-                        <td>45.00</td>
-                        <td><button class="quitar" onclick="borraElemento(this);"><i class="fas fa-trash-alt"></i></button></td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Libreta Scribe cuadro</td>
-                        <td>1524103578952</td>
-                        <td>15.00</td>
-                        <td>3</td>
-                        <td>45.00</td>
-                        <td><button class="quitar" onclick="borraElemento(this);"><i class="fas fa-trash-alt"></i></button></td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Portaminas Zebra</td>
-                        <td>3524103578935</td>
-                        <td>10.00</td>
-                        <td>3</td>
-                        <td>30.00</td>
-                        <td><button class="quitar" onclick="borraElemento(this);"><i class="fas fa-trash-alt"></i></button></td>
-                      </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Libreta Scribe raya</td>
+                            <td>1524103578951</td>
+                            <td>15.00</td>
+                            <td>3</td>
+                            <td>45.00</td>
+                            <td><button class="quitar" onclick="borraElemento(this);"><i
+                                        class="fas fa-trash-alt"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Libreta Scribe cuadro</td>
+                            <td>1524103578952</td>
+                            <td>15.00</td>
+                            <td>3</td>
+                            <td>45.00</td>
+                            <td><button class="quitar" onclick="borraElemento(this);"><i
+                                        class="fas fa-trash-alt"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Portaminas Zebra</td>
+                            <td>3524103578935</td>
+                            <td>10.00</td>
+                            <td>3</td>
+                            <td>30.00</td>
+                            <td><button class="quitar" onclick="borraElemento(this);"><i
+                                        class="fas fa-trash-alt"></i></button></td>
+                        </tr>
                     </tbody>
-                  </table>
+                </table>
             </div>
         </div>
     </div>
